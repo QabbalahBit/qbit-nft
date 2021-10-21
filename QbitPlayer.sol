@@ -34,7 +34,7 @@ contract QbitPlayer is ERC1155, Ownable {
         _mint(account, id, amount, "");
     }
 
-    function burn(address account, uint25 id, uint256 amount) public {
+    function burn(address account, uint256 id, uint256 amount) public {
         require(msg.sender == account);
         _burn(account, id, amount);
     }
