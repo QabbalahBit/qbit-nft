@@ -17,7 +17,7 @@ contract QbitPlayer is ERC1155, Ownable {
     uint256 public constant SWORD = 8;
     uint256 public constant SHIELD = 9;
 
-    constructor() ERC1155("../METADATA/{id}.json") {
+    constructor() ERC1155("https://gc18asybwbzn.grandmoralis.com/{id}.json") {
         _mint(msg.sender, GOLD, 1, "RMR");
         _mint(msg.sender, SILVER, 1, "LYS");
         _mint(msg.sender, BRONZE, 1, "HBT");
